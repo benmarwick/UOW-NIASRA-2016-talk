@@ -1,0 +1,287 @@
+---
+title: "Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation" 
+author: "Ben Marwick"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+output: 
+  ioslides_presentation
+css: my_css.css
+---
+
+<HEAD><link rel="stylesheet" href="figures/font-awesome-4.6.3/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="figures/academicons-1.6.0/css/academicons.css" />
+
+</HEAD>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Overview {.bigger40}
+
+<div><span style="font-size:1.5em; line-height:1.6em">
+<i class="fa fa-question-circle  fa-1.7x"></i> Motivation    
+<i class="fa fa-university   fa-1.7x"></i> Four general principles    
+<i class="fa fa-briefcase  fa-1.7x"></i> Case study     
+<i class="fa fa-balance-scale  fa-1.7x"></i> Costs and benefits     
+</div></span>
+
+##  {.mySegue}
+
+<div><span style="font-size:0.7em; line-height:1.3em">
+<i class="fa fa-question-circle   fa-1.7x"></i> Motivation
+</div></span>
+
+## {.flexbox .vcenter #myImagePage1}
+
+![](figures/hey.png)
+<!-- from Tony Hey presentation on 'Open Science Decoded' -->
+
+## {.flexbox .vcenter #myImagePage}
+
+![](figures/reinhart_rogoff_coding_error_0.png)
+
+## {.flexbox .vcenter #myImagePage1}
+
+![](figures/reinhart_rogoff_econ_mag.png)
+
+## {.flexbox .vcenter #myImagePage1}
+
+![](figures/convo_en.png)
+
+## {.flexbox .vcenter #myImagePage1}
+
+![](figures/convo_fr.png)
+
+## {.flexbox .vcenter #myImagePage1}
+
+![](figures/convo_de.png)
+
+## {.flexbox .vcenter #myImagePage}
+
+![](figures/convo_jp.png)
+
+## {.flexbox .vcenter #myImagePage1}
+
+![](figures/gizmodo.png)
+
+## Key ideas {.bigger40}
+
+<div><span style="font-size:1.1em; line-height:1.5em">
+<i class="fa fa-lightbulb-o  fa-1.5x"></i> Reproducibilty is necessary for scientific progress        
+<i class="fa fa-lightbulb-o  fa-1.5x"></i> Computers wrangle all the data, but also obscure it       
+<i class="fa fa-lightbulb-o  fa-1.5x"></i> Especially point-and-click actions       
+<i class="fa fa-lightbulb-o  fa-1.5x"></i> Technical solutions available in open source/format/data/access   
+</div></span>
+
+## {.flexbox .vcenter #myImagePage2}
+
+![](figures/jamt.png)
+
+##  {.mySegueSmall}
+
+<div><span style="font-size:0.7em; line-height:1.3em">
+<i class="fa fa-university   fa-1.7x"></i> Four general principles of reproducible research that have emerged in other fields
+</div></span>
+
+
+## 1. Make openly available the data and methods that generated the published results  {.bigger30}
+
+<font color="green">✓</font> Plain text file formats
+
+<font color="green">✓</font> persistent URLs
+
+Victoria Stodden's _Reproducible Research Standard_
+
+<font color="green">✓</font> Data: CC-0 (public domain)
+
+<font color="green">✓</font> Code: MIT (no liability for reuse)
+
+<font color="green">✓</font> Text/Figures/Media: CC-BY (attribution required)
+
+## 2. Write scripts to conduct analyses {.bigger35}
+
+<font color="red">✗</font> Mouse gestures leave few traces that are enduring and accessible to others
+
+<font color="red">✗</font> Easy to lose track of _ah hoc_ changes in mouse-driven environments 
+
+
+<font color="green">✓</font> Everything should be scripted: data ingest, cleaning, analysis, visualizing, and reporting
+
+<font color="green">✓</font> Scripts create a very high-resolution record of the research workflow in a plain text file that can be reused and inspected by others
+
+## 3. Use version control to track changes {.bigger30}
+
+<font color="red">✗</font> Managing different versions of computer files is very challenging
+
+<font color="red">✗</font> Poor version control leads to loosing track of the provenance of results
+
+<font color="green">✓</font> VCS designed for software engineering are suitable for research code and text
+
+<font color="green">✓</font> Commit history preserves a high-resolution, transparent record of the development of a file or set of files
+
+<font color="green">✓</font> Enables remote collaborators to
+work together without overwriting each other’s work
+
+## 4. Describe and archive the computational environment {.bigger33}
+
+<font color="red">✗</font> Minor changes in software can cripple complex research pipelines
+
+<font color="red">✗</font> Managing software dependencies is tedious
+
+<font color="green">✓</font>  List of the key pieces software and their
+version numbers    
+
+<font color="green">✓</font>  Archive a self-contained computational environment like a virtual machine or Linux container
+
+##  {.mySegueSmall}
+
+<div><span style="font-size:0.7em; line-height:1.3em">
+<i class="fa fa-briefcase   fa-1.7x"></i> Case Study
+</div></span>
+
+## {.flexbox .vcenter #myImagePage3}
+
+![](figures/jhe.png)
+
+## First principle  {.bigger55}
+
+<i class="ai ai-figshare ai-1.5x"></i> All files on figshare.com
+
+<img src="figures/csv.png" alt="" style="width: 50px;"/> Data in CSV format
+
+<i class="fa fa-folder-open-o fa-1.5x"></i> Organised as an R package
+
+## {.flexbox .vcenter #myImagePage4}
+
+![](figures/figshare.png)
+<!-- https://dx.doi.org/10.6084/m9.figshare.1297059.v2 -->
+
+## {.flexbox .vcenter #myImagePage1}
+
+![](figures/pkg.png)
+
+## Second principle  {.bigger40}
+
+<img src="figures/rmd.png" alt="" style="width: 30px;"/> R & Rmarkdown documents
+<!-- https://github.com/benmarwick/1989-excavation-report-Madjebebe -->
+
+<img src="figures/kjh.png" alt="" style="width: 600px;"/>
+<!-- https://kieranhealy.org/files/papers/plain-person-text.pdf -->
+
+## {.flexbox .vcenter #myImagePage5}
+
+![](figures/lp.png)
+
+## Third principle  {.bigger40}
+
+<i class="fa fa-github fa-1.5x"></i> All files tracked with Git, hosted on GitHub
+<!-- https://github.com/benmarwick/1989-excavation-report-Madjebebe -->
+
+<i class="fa fa-user fa-1.5x"></i> Collaboration did not occur on GitHub because no co-authors used it
+
+
+## {.flexbox .vcenter #myImagePage5}
+
+![](figures/git.png)
+
+## Fourth principle  {.bigger40}
+
+<img src="figures/docker.png" alt="" style="width: 40px;"/> Docker image and Dockerfile to contain RStudio, packages, code and external dependencies 
+<!-- https://hub.docker.com/r/benmarwick/mjb1989excavationpaper/ -->
+
+<img src="figures/rocker.png" alt="" style="width: 40px;"/> Based on Rocker image and templates
+<!-- https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image -->
+
+<i class="fa fa-exclamation-triangle fa-1.5x"></i> Keeping this working has been a moving target
+<!-- my VM: https://drive.google.com/file/d/0B87CmPqGXTzlVFVMTmVxVDNfX3M/view?usp=sharing -->
+
+## {.flexbox .vcenter #myImagePage7}
+
+![](figures/vm.png)
+
+## Continuous integration has helped
+
+<div><span style="font-size:3em; line-height:1.5em">
+<i class="fa fa-file-code-o fa-1.7x"></i> .travis.yml    
+<i class="fa fa-file-code-o fa-1.7x"></i> circle.yml     
+</div></span>
+
+## Research compendium +
+
+<div><span style="font-size:2em; line-height:1.5em">
+<i class="fa fa-file-text-o fa-1.5x"></i> README.md    
+<i class="fa fa-folder-open fa-1.5x"></i> R package & manuscript    
+<i class="fa fa-folder-open fa-1.5x"></i> VCS repository     
+<i class="fa fa-file-code-o fa-1.5x"></i> code CI     
+<i class="fa fa-file-code-o fa-1.5x"></i> environment CI      
+ 
+</div></span>
+
+##  {.mySegue}
+
+<div><span style="font-size:0.7em; line-height:1.3em">
+<i class="fa fa-balance-scale  fa-1.7x"></i> Costs & benefits
+</div></span>
+
+## Costs  {.bigger45 .build}
+
+<i class="fa fa-clock-o  fa-1.5x"></i> Time learning the tools 
+
+<i class="fa fa-calendar  fa-1.5x"></i> A lot of time  
+
+<i class="fa fa-wrench  fa-1.5x"></i> Built-in vs Bolt-on
+
+
+## Benefits {.bigger40 .build}
+
+<i class="fa fa-graduation-cap fa-1.5x"></i> Comfort of knowing that I am right & have no secrets
+
+<i class="fa fa-clock-o  fa-1.5x"></i> Save time by reusing my previous code
+
+<i class="fa fa-line-chart fa-1.5x"></i> Open data confers citation advantages, but magnitude is highly variable
+
+<i class="fa fa-users fa-1.5x"></i> Open Source community membership provides access to high-quality help
+
+## Two implications: Training {.bigger40}
+
+<img src="figures/pi.png" alt="" style="width: 800px;"/>
+
+## Two implications: Incentives {.bigger40}
+
+<img src="figures/open_data_all.png" alt="" style="width: 500px;"/>
+
+<img src="figures/open_materials_all.png" alt="" style="width: 500px;"/>
+
+<!-- http://www.nature.com/news/digital-badges-motivate-scientists-to-share-data-1.19907 --> 
+
+<!-- https://osf.io/tvyxz/ -->
+
+## {.flexbox .vcenter #myImagePage6}
+
+![](figures/ia.png)
+
+## Summary {.bigger35}
+
+- Open methods and materials, scripted workflow, version control and environment control are generic principles suitable for most fields of research
+- The specific details will change over time, but the principles will endure
+- For most people, the technical problems already have good solutions, the remaining challenge is cultural
+
+
+## Colophon
+
+Presentation written in [R Markdown using ioslides](http://rmarkdown.rstudio.com/ioslides_presentation_format.html)
+
+Compiled into HTML5 using [RStudio](http://www.rstudio.com/ide/) & [knitr](http://yihui.name/knitr)
+
+Source code hosting:
+https://github.com/benmarwick/
+
+ORCID: http://orcid.org/0000-0001-7879-4531
+
+Licensing: 
+
+* Presentation: [CC-BY-3.0](http://creativecommons.org/licenses/by/3.0/us/)
+
+* Source code: [MIT](http://opensource.org/licenses/MIT) 
+
