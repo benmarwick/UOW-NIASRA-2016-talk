@@ -325,7 +325,7 @@ Presentation written in [R Markdown using ioslides](http://rmarkdown.rstudio.com
 Compiled into HTML5 using [RStudio](http://www.rstudio.com/ide/) & [knitr](http://yihui.name/knitr)
 
 Source code hosting:
-https://github.com/benmarwick/
+https://github.com/benmarwick/UOW-NIASRA-2016-talk
 
 ORCID: http://orcid.org/0000-0001-7879-4531
 
