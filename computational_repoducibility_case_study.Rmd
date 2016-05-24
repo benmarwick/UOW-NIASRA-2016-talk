@@ -104,7 +104,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
    <img src="figures/convo_all.png" alt="" width="800" />
 
-## {.flexbox .vcenter #myImagePage1}
+## {.flexbox .vcenter #myImagePage2}
 
 ![](figures/reinhart_rogoff_coding_error_0.png)
 
