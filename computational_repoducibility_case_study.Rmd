@@ -1,5 +1,5 @@
 ---
-title: "Computational Reproducibility in Archaeological Research: Basic Principles and a Case Study of Their Implementation" 
+title: "Computational reproducibility in research and teaching: A case study from archaeology" 
 author: "Ben Marwick"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 output: 
@@ -32,38 +32,85 @@ knitr::opts_chunk$set(echo = FALSE)
 <i class="fa fa-question-circle   fa-1.7x"></i> Motivation
 </div></span>
 
+## {.bigger35}
+
+<div class="columns-2">
+   <img src="figures/merton.jpg" alt="" width="300" />
+
+  <i class="fa fa-flask fa-1x"></i>  Universalism   
+      
+  <i class="fa fa-flask fa-1x"></i>  'Communism' 
+      
+  <i class="fa fa-flask fa-1x"></i>  Disinterestedness 
+      
+  <i class="fa fa-flask fa-1x"></i>  Organized skepticism 
+      
+
+</div>
+
+
+## {.flexbox .vcenter }
+
+<img src="figures/badnews.png" alt="" width="800" />
+
+## Origins of scientific skepticism  {.bigger35}
+
+<div class="columns-2">
+   <img src="figures/boyle.jpg" alt="" width="400" />
+   
+  <i class="fa fa-male fa-1x"></i>  Robert Boyle's vacuum pump 
+
+  <i class="fa fa-pencil fa-1x"></i>  Documentation  
+      
+  <i class="fa fa-eye fa-1x"></i>  'Communal witnessing' 
+      
+  <i class="fa fa-cloud fa-1x"></i>  Circumstances 
+      
+</div>
+
+## Stodden's contemporary equivalents  {.bigger45}
+
+<div class="columns-2">
+   <img src="figures/stodden.jpg" alt="" width="300" />
+   
+  <i class="fa fa-wrench fa-1x"></i>  Empirical Reproducibility
+
+  <i class="fa fa-terminal fa-1x"></i>  Computational Reproducibility  
+      
+  <i class="fa fa-calculator fa-1x"></i>  Statistical Reproducibility
+      
+
+</div>
+
+## Peng: 'For every X there is a Computational X'
+
+<div class="columns-2">
+   <img src="figures/peng.jpg" alt="" width="300" />
+   
+  <i class="fa fa-desktop fa-1x"></i>  Computational Biology
+
+  <i class="fa fa-desktop fa-1x"></i>   Computational Physics  
+      
+  <i class="fa fa-desktop fa-1x"></i>   Computational Chemistry
+  
+  <i class="fa fa-desktop fa-1x"></i>   Computational Economics
+  
+  <i class="fa fa-desktop fa-1x"></i>   Computational ...
+      
+
+</div>
+
+## Computers are the new vacuum pump {.flexbox .vcenter}
+
+   <img src="figures/convo_all.png" alt="" width="800" />
+
 ## {.flexbox .vcenter #myImagePage1}
-
-![](figures/hey.png)
-<!-- from Tony Hey presentation on 'Open Science Decoded' -->
-
-## {.flexbox .vcenter #myImagePage}
 
 ![](figures/reinhart_rogoff_coding_error_0.png)
 
 ## {.flexbox .vcenter #myImagePage1}
 
 ![](figures/reinhart_rogoff_econ_mag.png)
-
-## {.flexbox .vcenter #myImagePage1}
-
-![](figures/convo_en.png)
-
-## {.flexbox .vcenter #myImagePage1}
-
-![](figures/convo_fr.png)
-
-## {.flexbox .vcenter #myImagePage1}
-
-![](figures/convo_de.png)
-
-## {.flexbox .vcenter #myImagePage}
-
-![](figures/convo_jp.png)
-
-## {.flexbox .vcenter #myImagePage1}
-
-![](figures/gizmodo.png)
 
 ## Key ideas {.bigger40}
 
@@ -166,12 +213,12 @@ version numbers
 <img src="figures/rmd.png" alt="" style="width: 30px;"/> R & Rmarkdown documents
 <!-- https://github.com/benmarwick/1989-excavation-report-Madjebebe -->
 
-<img src="figures/kjh.png" alt="" style="width: 600px;"/>
-<!-- https://kieranhealy.org/files/papers/plain-person-text.pdf -->
+<img src="figures/rmd_io.png" alt="" style="width: 600px;"/>
+
 
 ## {.flexbox .vcenter #myImagePage5}
 
-![](figures/lp.png)
+![](figures/lp_two.png)
 
 ## Third principle  {.bigger40}
 
@@ -193,14 +240,17 @@ version numbers
 <img src="figures/rocker.png" alt="" style="width: 40px;"/> Based on Rocker image and templates
 <!-- https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image -->
 
-<i class="fa fa-exclamation-triangle fa-1.5x"></i> Keeping this working has been a moving target
 <!-- my VM: https://drive.google.com/file/d/0B87CmPqGXTzlVFVMTmVxVDNfX3M/view?usp=sharing -->
 
-## {.flexbox .vcenter #myImagePage7}
+## Smaller than a VM {.flexbox .vcenter #myImagePage7}
 
 ![](figures/vm.png)
 
-## Continuous integration has helped
+## Extreme isolation {.flexbox .vcenter }
+
+![](figures/homer.jpg)
+
+## Continuous integration is helpful
 
 <div><span style="font-size:3em; line-height:1.5em">
 <i class="fa fa-file-code-o fa-1.7x"></i> .travis.yml    
