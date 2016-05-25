@@ -7,6 +7,8 @@ output:
 css: my_css.css
 ---
 
+<!--- Talk based on paper at https://github.com/benmarwick/basic_computational_reproducibility_case_study -->
+
 <HEAD><link rel="stylesheet" href="figures/font-awesome-4.6.3/css/font-awesome.min.css">
 
 <link rel="stylesheet" href="figures/academicons-1.6.0/css/academicons.css" />
@@ -68,10 +70,11 @@ knitr::opts_chunk$set(echo = FALSE)
       
 </div>
 
-## Stodden's contemporary equivalents  {.bigger45}
+## Stodden on modern skepticism  {.bigger45}
 
 <div class="columns-2">
    <img src="figures/stodden.jpg" alt="" width="300" />
+   <!-- https://www.edge.org/annual-question/2014/response/25340 -->
    
   <i class="fa fa-wrench fa-1x"></i>  Empirical Reproducibility
 
@@ -86,6 +89,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 <div class="columns-2">
    <img src="figures/peng.jpg" alt="" width="300" />
+   <!-- http://simplystatistics.org/2013/08/21/treading-a-new-path-for-reproducible-research-part-1/ -->
    
   <i class="fa fa-desktop fa-1x"></i>  Computational Biology
 
@@ -100,17 +104,29 @@ knitr::opts_chunk$set(echo = FALSE)
 
 </div>
 
+## Dcoumentation breakdown {.flexbox .vcenter}
+
+   <img src="figures/quote.jpg" alt="" width="900" />
+   
+<!-- http://biostatistics.oxfordjournals.org/content/11/3/385.long --> 
+
+<!-- http://statweb.stanford.edu/~wavelab/Wavelab_850/wavelab.pdf --> 
+
 ## Computers are the new vacuum pump {.flexbox .vcenter}
 
    <img src="figures/convo_all.png" alt="" width="800" />
+   <!-- https://medium.com/@benmarwick/how-computers-broke-science-and-what-we-can-do-to-fix-it-5d413559ca03 -->
 
 ## {.flexbox .vcenter #myImagePage2}
 
 ![](figures/reinhart_rogoff_coding_error_0.png)
+<!-- http://rooseveltinstitute.org/researchers-finally-replicated-reinhart-rogoff-and-there-are-serious-problems/ -->
 
 ## {.flexbox .vcenter #myImagePage1}
 
 ![](figures/reinhart_rogoff_econ_mag.png)
+<!-- http://www.economist.com/blogs/freeexchange/2013/04/debt-and-growth -->
+
 
 ## Key ideas {.bigger40}
 
@@ -124,11 +140,13 @@ knitr::opts_chunk$set(echo = FALSE)
 ## {.flexbox .vcenter #myImagePage2}
 
 ![](figures/jamt.png)
+<!---  https://github.com/benmarwick/basic_computational_reproducibility_case_study -->
+
 
 ##  {.mySegueSmall}
 
 <div><span style="font-size:0.7em; line-height:1.3em">
-<i class="fa fa-university   fa-1.7x"></i> Four general principles of reproducible research that have emerged in other fields
+<i class="fa fa-university   fa-1.7x"></i> Four general principles of reproducible research that have emerged across the sciences
 </div></span>
 
 
@@ -139,6 +157,7 @@ knitr::opts_chunk$set(echo = FALSE)
 <font color="green">✓</font> persistent URLs
 
 Victoria Stodden's _Reproducible Research Standard_
+<!-- https://web.stanford.edu/~vcs/papers/ERROLSI03092009.pdf -->
 
 <font color="green">✓</font> Data: CC-0 (public domain)
 
@@ -146,14 +165,14 @@ Victoria Stodden's _Reproducible Research Standard_
 
 <font color="green">✓</font> Text/Figures/Media: CC-BY (attribution required)
 
-## 2. Write scripts to conduct analyses {.bigger35}
+## 2. Write scripts to do everything {.bigger35}
 
 <font color="red">✗</font> Mouse gestures leave few traces that are enduring and accessible to others
 
 <font color="red">✗</font> Easy to lose track of _ah hoc_ changes in mouse-driven environments 
 
 
-<font color="green">✓</font> Everything should be scripted: data ingest, cleaning, analysis, visualizing, and reporting
+<font color="green">✓</font> Scripts for data ingest, cleaning, analysis, visualizing, and reporting
 
 <font color="green">✓</font> Scripts create a very high-resolution record of the research workflow in a plain text file that can be reused and inspected by others
 
@@ -250,23 +269,28 @@ version numbers
 
 ![](figures/homer.jpg)
 
-## Continuous integration is helpful
+## Gentleman & Temple Lang (2004)
+ 
+"research compendium as both a container for the different elements that make up the document and its computations (i.e. text, code, data,...), and as a means for distributing, managing and updating the collection."
 
-<div><span style="font-size:3em; line-height:1.5em">
-<i class="fa fa-file-code-o fa-1.7x"></i> .travis.yml    
-<i class="fa fa-file-code-o fa-1.7x"></i> circle.yml     
-</div></span>
+<!-- http://biostats.bepress.com/bioconductor/paper2/ -->
 
-## Research compendium +
+<img src="figures/simple_compendium.png" alt="" style="width: 800px;"/>
+
+<!-- https://github.com/ropensci/rrrpkg -->
+
+
+## Research compendium+
 
 <div><span style="font-size:2em; line-height:1.5em">
 <i class="fa fa-file-text-o fa-1.5x"></i> README.md    
-<i class="fa fa-folder-open fa-1.5x"></i> R package & manuscript    
-<i class="fa fa-folder-open fa-1.5x"></i> VCS repository     
-<i class="fa fa-file-code-o fa-1.5x"></i> code CI     
-<i class="fa fa-file-code-o fa-1.5x"></i> environment CI      
+<i class="fa fa-folder-open fa-1.5x"></i> R package    
+<i class="fa fa-folder-open fa-1.5x"></i> Version control     
+<i class="fa fa-file-code-o fa-1.5x"></i> Environment    
+     
  
 </div></span>
+      
 
 ##  {.mySegue}
 
@@ -278,7 +302,7 @@ version numbers
 
 <i class="fa fa-clock-o  fa-1.5x"></i> Time learning the tools 
 
-<i class="fa fa-calendar  fa-1.5x"></i> A lot of time  
+<i class="fa fa-thumbs-up  fa-1.5x"></i> That's all 
 
 <i class="fa fa-wrench  fa-1.5x"></i> Built-in vs Bolt-on
 
@@ -313,9 +337,13 @@ version numbers
 
 ## Summary {.bigger35}
 
-- Open methods and materials, scripted workflow, version control and environment control are generic principles suitable for most fields of research
-- The specific details will change over time, but the principles will endure
-- For most people, the technical problems already have good solutions, the remaining challenge is cultural
+<i class="fa fa-bomb  fa-1.5x"></i>  Open methods and materials, scripted workflow, version control and environment control are generic principles suitable for most fields of research   
+
+
+<i class="fa fa-bomb  fa-1.5x"></i>  The specific tools will change over time, but the principles will endure     
+
+
+<i class="fa fa-bomb  fa-1.5x"></i>  For most people, the technical problems already have good solutions, the remaining challenge is cultural (eg. syllabi & peer reviews)
 
 
 ## Colophon
