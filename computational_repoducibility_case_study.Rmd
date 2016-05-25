@@ -104,7 +104,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 </div>
 
-## Dcoumentation breakdown {.flexbox .vcenter}
+## Documentation breakdown {.flexbox .vcenter}
 
    <img src="figures/quote.jpg" alt="" width="900" />
    
@@ -232,7 +232,7 @@ version numbers
 <img src="figures/rmd.png" alt="" style="width: 30px;"/> R & Rmarkdown documents
 <!-- https://github.com/benmarwick/1989-excavation-report-Madjebebe -->
 
-<img src="figures/rmd_io.png" alt="" style="width: 600px;"/>
+<img src="figures/rmd_io.png" alt="" style="width: 500px;"/>
 
 
 ## {.flexbox .vcenter #myImagePage5}
